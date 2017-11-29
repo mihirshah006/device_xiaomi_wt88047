@@ -19,17 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/poly/config/common.mk)
 
 # Inherit from wt88047 device
-$(call inherit-product, device/wingtech/wt88047/device.mk)
+$(call inherit-product, device/xiaomi/wt88047/device.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 # Device identifier. This must come after all inclusions
-BOARD_VENDOR := wingtech
+BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := wt88047
 PRODUCT_NAME := poly_wt88047
-PRODUCT_MANUFACTURER := Wingtech
+PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 2
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

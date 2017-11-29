@@ -16,7 +16,7 @@
 FORCE_32_BIT := true
 TW_INCLUDE_CRYPTO := true
 
-DEVICE_PATH := device/wingtech/wt88047
+DEVICE_PATH := device/xiaomi/wt88047
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -64,7 +64,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
-TARGET_KERNEL_SOURCE := kernel/wingtech/msm8916
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8916
 TARGET_KERNEL_CONFIG := wt88047_defconfig
 ifneq ($(FORCE_32_BIT),true)
 TARGET_KERNEL_ARCH := arm64
@@ -219,4 +219,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 
 # inherit from the proprietary version
--include vendor/wingtech/wt88047/BoardConfigVendor.mk
+-include vendor/xiaomi/wt88047/BoardConfigVendor.mk
